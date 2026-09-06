@@ -3,113 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>球队介绍</title>
+  <title>球队介绍及杂志</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="site-header">
     <div class="nav-wrap">
-			<img src="#" alt="NBA Logo">
-      <a class="logo" href="#">球队导航</a>
+			<img src="img/logo.png" alt="NBA Logo" width="50px">
       <nav class="main-nav">
         <a href="#team">全部球队</a>
         <a href="#magazine">相关杂质借阅</a>
       </nav>
     </div>
+
+		<h1 class="title">探索NBA球队与书籍</h1>
   </header>
   <main>
 		<section id="intro">
-			<h2 class="title">探索NBA球队与书籍</h2>
-			<p>本页面介绍六支具有代表性的NBA球队，带你了解它们的球队历史、特色与经典故事。同时，我们还准备了NBA主题书籍，欢迎选择感兴趣的书籍并提交借阅申请。</p>
+			<div class="intro-flex">
+				<h2 class="subtitle">导入</h2>
+				<p class="card">本页面介绍六支具有代表性的NBA球队，带你了解它们的球队历史、特色与经典故事。同时，我们还准备了NBA主题书籍，欢迎选择感兴趣的书籍并提交借阅申请。</p>
+			</div>
 		</section>
 
     <section id="team">
-      <h2 class="title">全部球队</h2>
+      <h2 class="subtitle">全部球队</h2>
       <div class="card-grid">
-				<article class="team-card">
+				<article class="card">
 					<h3>洛杉矶湖人（Lakers）</h3>
-					<p>NBA 最具传奇色彩的球队之一，拥有众多冠军和篮球巨星，紫金配色也非常具有辨识度。</p>
-					<a href="#" target="_blank">查看详情</a>
+					<ul>
+							<li>拥有众多冠军</li>
+							<li>拥有众多篮球巨星</li>
+							<li>紫金配色具有辨识度</li>
+					</ul>
+					<a href="https://www.nba.com/lakers" target="_blank">查看详情</a>
 				</article>
-        
-				<article class="team-card">
+
+				<article class="card">
 					<h3>金州勇士（Warriors）</h3>
 					<p>以快速进攻和三分球闻名，近年来凭借库里等球星建立了极具代表性的“小球”打法。</p>
-					<a href="#" target="_blank">查看详情</a>
+					<a href="https://www.nba.com/warriors" target="_blank">查看详情</a>
 				</article>
 
-				<article class="team-card">
+				<article class="card">
 					<h3>波士顿凯尔特人（Celtics）</h3>
 					<p>NBA 历史悠久的豪门球队，拥有丰富的冠军历史，经典的绿色队服辨识度极高。</p>
-					<a href="#" target="_blank">查看详情</a>
+					<a href="https://www.nba.com/celtics" target="_blank">查看详情</a>
 				</article>
 
-        <article class="team-card">
+        <article class="card">
 					<h3>芝加哥公牛（Bulls）</h3>
 					<p>因迈克尔·乔丹时代而闻名全球，90年代曾建立王朝，是篮球历史上最具影响力的球队之一。</p>
-					<a href="#">查看详情</a>
+					<a href="https://www.nba.com/bulls" target="_blank">查看详情</a>
 				</article>
 
-        <article class="team-card">
+        <article class="card">
 					<h3>曼彻斯特城（Manchester City）</h3>
 					<p>英格兰足球超级联赛的强队，以出色的控球和进攻能力著称，近年来在国内赛场表现非常突出。</p>
-					<a href="#" target="_blank">查看详情</a>
+					<a href="https://www.mancity.com" target="_blank">查看详情</a>
 				</article>
 
-        <article class="team-card">
+        <article class="card">
 					<h3>皇家马德里（Real Madrid）</h3>
 					<p>世界足坛最著名的豪门之一，拥有辉煌的欧洲冠军历史，白色球衣和“银河战舰”形象深入人心。</p>
-					<a href="#" target="_blank">查看详情</a>
+					<a href="https://www.realmadrid.com" target="_blank">查看详情</a>
 				</article>
       </div>
     </section>
 
 		<section id="magazine">
 			<form>
-				<h2>NBA相关杂质借阅</h2>
-				<p>
-					<label for="select">选择借阅的书</label>
-					<select id="select" name="select" required>
-						<option value="none">请选择</option>
-						<option value="高等数学">高等数学</option>
-						<option value="大学物理">大学物理</option>
-						<option value="C语言">C语言</option>
-					</select>
-				</p>
-				<p>
-					<label for="id">学号</label>
-					<input type="number" id="id" name="id" required>
-				</p>
-				<p>
-					<label for="email">个人邮箱</label>
-					<input type="email" id="email" name="email" required>
-				</p>
-				<p>
-					<label for="ddl">借阅截止时间</label>
-					<input type="date" id="ddl" name="ddl" required>
-				</p>
-				<p>选择预借馆</p>
-				<p>
-					<label><input type="radio" name="campus" value="cg" checked> 呈贡图书馆</label>
-					<label><input type="radio" name="campus" value="dl"> 东陆图书馆</label>
-				</p>
-				<p>
-					<label for="remark">备注</label>
-					<input type="text" id="remark" name="remark" placeholder="输入备注" maxlength="100">
-				</p>
-
-				<details>
-					<summary>填写说明</summary>
+				<h2 class="subtitle">NBA相关杂质借阅</h2>
+				<div class="mag-flex">
 					<p>
-						<label for="advice">填写说明</label><br>
-						<textarea id="advice" name="advice" rows="4" maxlength="2" placeholder="说点什么"></textarea>
+						<label for="select">选择借阅的书</label>
+						<select id="select" name="select" required>
+							<option value="none">请选择</option>
+							<option value="SLAM">SLAM</option>
+							<option value="Sports Illustrated">Sports Illustrated</option>
+							<option value="Dime Magazine">Dime Magazine</option>
+						</select>
 					</p>
-				</details>
+					<p>
+						<label for="id">学号</label>
+						<input type="number" id="id" name="id" required>
+					</p>
+					<p>
+						<label for="email">个人邮箱</label>
+						<input type="email" id="email" name="email" required>
+					</p>
+					<p>
+						<label for="ddl">借阅截止时间</label>
+						<input type="date" id="ddl" name="ddl" required>
+					</p>
+					<p>
+						选择预借馆
+						<label><input type="radio" name="campus" value="cg" checked> 呈贡图书馆</label>
+						<label><input type="radio" name="campus" value="dl"> 东陆图书馆</label>
+					</p>
+					<p>
+						<label for="remark">备注</label>
+						<input type="text" id="remark" name="remark" placeholder="输入备注" maxlength="100">
+					</p>
 
-				<p>
-					<button type="submit">确认借阅</button>
-       			</p>
+					<p class="hasBtn">
+						<button type="submit">确认借阅</button>
+					</p>
+				</div>
 			</form>
 		</section>
   </main>
